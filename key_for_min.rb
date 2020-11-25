@@ -10,8 +10,8 @@ def key_for_min_value(name_hash)
       min = name_hash[key]
       min_name = key 
     end 
-    min = 500 
   end 
+  min = 500
   min_name
 
 end
