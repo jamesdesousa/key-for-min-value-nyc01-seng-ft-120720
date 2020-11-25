@@ -4,9 +4,6 @@
 def key_for_min_value(name_hash)
   min = 500 
   min_name = ""
-if !name_hash.count
-  return nil 
-else 
   name_hash.each do |key,value|
     if value < min  
       min = value 
@@ -14,8 +11,12 @@ else
     end 
      
   end 
-
-  min_name
-end 
+  if min_name 
+    min_name
+  else
+    nil 
+  end 
+  
+ 
 
 end
