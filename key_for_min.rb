@@ -5,7 +5,9 @@ def key_for_min_value(name_hash)
   min = 500 
   min_name = ""
   name_hash.each do |key,value|
-    
+  if !name_hash.count
+    return nil 
+  end 
     if value < min  
       min = value 
       min_name = key 
