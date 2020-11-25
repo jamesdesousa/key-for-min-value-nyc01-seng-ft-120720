@@ -3,14 +3,12 @@
 
 def key_for_min_value(name_hash)
   min = 500 
-  min_name = ""
+  min_name 
   name_hash.each do |key,value|
     
     if value < min  
       min = value 
       min_name = key 
-    elsif !name_hash.count
-      min_name = nil  
     end 
      
   end 
